@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Overlay and Popup for Telegram Channel -->
+<div class="overlay" id="telegramOverlay">
+    <div class="popup">
+        <span class="close-btn" onclick="closeTelegramPopup()">×</span>
+        <p style="color: #333;">Join our Telegram channel for updates! 🔔</p>
+        <a href="https://t.me/flixplusnet" target="_blank">
+            <button class="visit-btn" onclick="visitedTelegramPage()">Join Now</button>
+        </a>
+    </div>
+</div>
+
+<!-- Overlay and Popup for Collab Form -->
+<div class="overlay" id="collabOverlay">
+    <!-- Collab form content goes here -->
+    <div class="popup" id="collabPopup">
+        <span class="close-btn" onclick="closeCollabPopup()">×</span>
+        <h2>Collab with us</h2>
+        <!-- Add collab form fields here -->
+        <form id="collabForm">
+            <label for="collabName">Name:</label>
+            <input type="text" id="collabName" name="collabName" required>
+            <label for="collabContact">Contact Info:</label>
+            <input type="text" id="collabContact" name="collabContact" required>
+            <label for="collabIdeas">Project Ideas:</label>
+            <textarea id="collabIdeas" name="collabIdeas" required></textarea>
+            <button type="button" onclick="submitCollabForm()">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
